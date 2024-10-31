@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.ccs">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      body{
+        background-image:url(09.jpg) ;
+      }
+        #navbar {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 90px 10px; 
+            transition: 0.4s;
+            position: fixed;
+            width: 100%;
+            top: 0; 
+            z-index: 99;
+        }
+
+       
+        #navbar a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+       
+        #navbar #logo {
+            font-size: 35px;
+            font-weight: bold;
+            transition: 0.4s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 20px;
+        }
+
+       
+        #navbar a:hover {
+            background-color: #22c8e5;
+            color: black;
+        }
+
+       
+        #navbar a.active {
+            background-color: dodgerblue;
+            color: rgb(51, 172, 69);
+        }
+
+        
+        #navbar-right {
+            margin-left: 50px;
+            float: left;
+        }
+
+        
+        @media screen and (max-width: 580px) {
+            #navbar {
+                padding: 20px 10px !important;
+            }
+            #navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            #navbar-right {
+                float: none;
+            }
+        }
+
+        
+        .carousel-container {
+            max-width: 800px;
+            margin: 0 auto; 
+            margin-bottom: 20px;
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        footer .social-icons a:hover {
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#default" id="logo">Vi-Negar</a>
+        <div id="navbar-right">
+          <a  href="index.html">Home</a>
+          <a href="index2.html">Contact</a>
+          <a href="index3.html">About</a>
+          <a href="login.html">Logout</a>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 100mm;">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/dexter.dimatao.9/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+        <p>Made by Vi-Negar</p>
+    </footer>
+    
+
+   
+</body>
+</html>
