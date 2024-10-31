@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 0, 100);
+    background-image:url(34.jpg);
     background-size: cover;
     font-family: Arial, sans-serif;
             height: 100vh;
@@ -10,13 +10,13 @@ body {
 }
 
 .login-card {
-    background: rgba(38, 0, 255, 0.288);
+   margin-top: 70mm;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-    color: white;
+    color: rgb(7, 6, 6);
 }
 
 .login-card img{
